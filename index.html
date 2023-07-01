@@ -1,0 +1,1139 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-light">
+
+
+    <main class="container">
+        <section class="d-flex justify-content-center p-5">
+            <img src="/logo.png" alt="">
+        </section>
+        <section class="mt-4 mb-4 shadow-lg p-3 bg-body rounded">
+            <h4>
+                Üniversite (YKS) Tercih Robotu
+            </h4>
+
+            <hr class="hr" />
+
+            <div class="row justify-content-center">
+                <div class="col-lg-4 row">
+                    <div class="col-12 mt-2">
+                        <h5 class="card-title">
+                            Tercih Tipi:
+                        </h5>
+                    </div>
+
+                    <div class="col-12 mt-3">
+                        <select 
+                        single
+                        name="pturu"
+                        class="form-select" aria-label="tercih robotu tercih tipi seçimi">
+                            <option selected disabled>Tercih yapacağınız alanı seçiniz</option>
+                            <option value="tyt">TYT</option>
+                            <option value="ea">Eşit Ağırlık</option>
+                            <option value="say">Sayısal</option>
+                            <option value="söz">Sözel</option>
+                            <option value="dil">Dil</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row col-lg-4">
+                    <div class="col-12 mt-2">
+                        <h5 class="card-title">
+                            Sıralama Aralığı:
+                        </h5>
+                    </div>
+
+                    <div class="col-12 row mt-3">
+                        <div class="col">
+                            <input data-bw name="alt_bs" type="text" class="form-control" placeholder="Taban Sıralama">
+                        </div>
+
+                        <div class="col">
+                            <input data-bw name="ust_bs" type="text" class="form-control" placeholder="Tavan Sıralama">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row col-lg-4">
+                    <div class="col-12 mt-2">
+                        <h5 class="card-title">
+                            Puan Aralığı:
+                        </h5>
+                    </div>
+
+                    <div class="col-12 row mt-3">
+                        <div class="col-6">
+                            <input data-bw name="alt_puan" type="text" class="form-control" placeholder="Taban Puan">
+                        </div>
+
+                        <div class="col-6">
+                            <input data-bw name="ust_puan" type="text" class="form-control" placeholder="Tavan Puan">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-4 row">
+                    <div class="col-12 mt-2">
+                        <h5 class="card-title">
+                            Şehir:
+                        </h5>
+                    </div>
+
+                    <div class="col-12 mt-3">
+                        <select name="sehir" id="sehir" class="form-control"  multiple="multiple">
+                            <option value="Adana">Adana</option>
+                            <option value="Adıyaman">Adıyaman</option>
+                            <option value="Afyonkarahisar">Afyonkarahisar</option>
+                            <option value="Ağrı">Ağrı</option>
+                            <option value="Amasya">Amasya</option>
+                            <option value="Ankara">Ankara</option>
+                            <option value="Antalya">Antalya</option>
+                            <option value="Artvin">Artvin</option>
+                            <option value="Aydın">Aydın</option>
+                            <option value="Balıkesir">Balıkesir</option>
+                            <option value="Bilecik">Bilecik</option>
+                            <option value="Bingöl">Bingöl</option>
+                            <option value="Bitlis">Bitlis</option>
+                            <option value="Bolu">Bolu</option>
+                            <option value="Burdur">Burdur</option>
+                            <option value="Bursa">Bursa</option>
+                            <option value="Çanakkale">Çanakkale</option>
+                            <option value="Çankırı">Çankırı</option>
+                            <option value="Çorum">Çorum</option>
+                            <option value="Denizli">Denizli</option>
+                            <option value="Diyarbakır">Diyarbakır</option>
+                            <option value="Edirne">Edirne</option>
+                            <option value="Elazığ">Elazığ</option>
+                            <option value="Erzincan">Erzincan</option>
+                            <option value="Erzurum">Erzurum</option>
+                            <option value="Eskişehir">Eskişehir</option>
+                            <option value="Gaziantep">Gaziantep</option>
+                            <option value="Giresun">Giresun</option>
+                            <option value="Gümüşhane">Gümüşhane</option>
+                            <option value="Hakkâri">Hakkâri</option>
+                            <option value="Hatay">Hatay</option>
+                            <option value="Isparta">Isparta</option>
+                            <option value="Mersin">Mersin</option>
+                            <option value="İstanbul">İstanbul</option>
+                            <option value="İzmir">İzmir</option>
+                            <option value="Kars">Kars</option>
+                            <option value="Kastamonu">Kastamonu</option>
+                            <option value="Kayseri">Kayseri</option>
+                            <option value="Kırklareli">Kırklareli</option>
+                            <option value="Kırşehir">Kırşehir</option>
+                            <option value="Kocaeli">Kocaeli</option>
+                            <option value="Konya">Konya</option>
+                            <option value="Kütahya">Kütahya</option>
+                            <option value="Malatya">Malatya</option>
+                            <option value="Manisa">Manisa</option>
+                            <option value="Kahramanmaraş">Kahramanmaraş</option>
+                            <option value="Mardin">Mardin</option>
+                            <option value="Muğla">Muğla</option>
+                            <option value="Muş">Muş</option>
+                            <option value="Nevşehir">Nevşehir</option>
+                            <option value="Niğde">Niğde</option>
+                            <option value="Ordu">Ordu</option>
+                            <option value="Rize">Rize</option>
+                            <option value="Sakarya">Sakarya</option>
+                            <option value="Samsun">Samsun</option>
+                            <option value="Siirt">Siirt</option>
+                            <option value="Sinop">Sinop</option>
+                            <option value="Sivas">Sivas</option>
+                            <option value="Tekirdağ">Tekirdağ</option>
+                            <option value="Tokat">Tokat</option>
+                            <option value="Trabzon">Trabzon</option>
+                            <option value="Tunceli">Tunceli</option>
+                            <option value="Şanlıurfa">Şanlıurfa</option>
+                            <option value="Uşak">Uşak</option>
+                            <option value="Van">Van</option>
+                            <option value="Yozgat">Yozgat</option>
+                            <option value="Zonguldak">Zonguldak</option>
+                            <option value="Aksaray">Aksaray</option>
+                            <option value="Bayburt">Bayburt</option>
+                            <option value="Karaman">Karaman</option>
+                            <option value="Kırıkkale">Kırıkkale</option>
+                            <option value="Batman">Batman</option>
+                            <option value="Şırnak">Şırnak</option>
+                            <option value="Bartın">Bartın</option>
+                            <option value="Ardahan">Ardahan</option>
+                            <option value="Iğdır">Iğdır</option>
+                            <option value="Yalova">Yalova</option>
+                            <option value="Karabük">Karabük</option>
+                            <option value="Kilis">Kilis</option>
+                            <option value="Osmaniye">Osmaniye</option>
+                            <option value="Düzce">Düzce</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 row">
+                    <div class="col-12 mt-2">
+                        <h5 class="card-title">
+                            Üniversite Türü:
+                        </h5>
+                    </div>
+
+                    <div class="col-12 mt-3">
+                        <select single name="uni_turu" class="form-select" aria-label="tercih robotu tercih tipi seçimi">
+                            <option selected value="hepsi">Hepsi</option>
+                            <option value="Vakıf">Vakıf</option>
+                            <option value="Devlet">Devlet</option>
+                            <option value="KKTC">KKTC</option>
+                            <option value="Yabancı">Yabancı</option>
+                        </select>
+                    </div>
+                </div>
+                
+
+                <div class="col-lg-4 row">
+                    <div class="col-12 mt-2">
+                        <h5 class="card-title">
+                            Öğretim Türü:
+                        </h5>
+                    </div>
+
+                    <div class="col-12 mt-3">
+                        <select single name="ogretim_turu" class="form-select" aria-label="tercih robotu tercih tipi seçimi">
+                            <option selected value="hepsi">Hepsi</option>
+                            <option value="Örgün">Örgün</option>
+                            <option value="İkinci">İkinci</option>
+                            <option value="Uzaktan">Uzaktan</option>
+                            <option value="Açıköğretim">Açıköğretim</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-4 row">
+                    <div class="col-12 mt-2">
+                        <h5 class="card-title">
+                            Eğitim Dili:
+                        </h5>
+                    </div>
+
+                    <div class="col-12 mt-3">
+                        <select name="egitim_dili" id="egitim_dili" class="form-control"  multiple="multiple">
+                            
+                              <option value="Türkçe">Türkçe</option>
+                            
+                              <option value="İngilizce">İngilizce</option>
+                            
+                              <option value="Fransızca">Fransızca</option>
+                            
+                              <option value="Rusça">Rusça</option>
+                            
+                              <option value="Almanca">Almanca</option>
+                            
+                              <option value="Arapça">Arapça</option>
+                        </select>
+                             
+                    </div>
+                </div>
+
+                <div class="col-lg-4 row">
+                    <div class="col-12 mt-2">
+                        <h5 class="card-title">
+                            Üniversite:
+                        </h5>
+                    </div>
+
+                    <div class="col-12 mt-3">
+                        <select name="universite" id="universite" class="form-control"  multiple="multiple">
+                            <option value="Abant İzzet Baysal Üniversitesi">Abant İzzet Baysal Üniversitesi</option>
+                            <option value="Abdullah Gül Üniversitesi">Abdullah Gül Üniversitesi</option>
+                            <option value="Acıbadem Üniversitesi">Acıbadem Üniversitesi</option>
+                            <option value="Adana Bilim ve Teknoloji Üniversitesi">Adana Bilim ve Teknoloji Üniversitesi</option>
+                            <option value="Adnan Menderes Üniversitesi">Adnan Menderes Üniversitesi</option>
+                            <option value="Adıyaman Üniversitesi">Adıyaman Üniversitesi</option>
+                            <option value="Afyon Kocatepe Üniversitesi">Afyon Kocatepe Üniversitesi</option>
+                            <option value="Ahi Evran Üniversitesi">Ahi Evran Üniversitesi</option>
+                            <option value="Akdeniz Üniversitesi">Akdeniz Üniversitesi</option>
+                            <option value="Akev Üniversitesi">Akev Üniversitesi</option>
+                            <option value="Aksaray Üniversitesi">Aksaray Üniversitesi</option>
+                            <option value="Alanya Alaaddin Keykubat Üniversitesi">Alanya Alaaddin Keykubat Üniversitesi</option>
+                            <option value="Alanya Hamdullah Emin Paşa Üniversitesi">Alanya Hamdullah Emin Paşa Üniversitesi</option>
+                            <option value="Amasya Üniversitesi">Amasya Üniversitesi</option>
+                            <option value="Anadolu Üniversitesi">Anadolu Üniversitesi</option>
+                            <option value="Anka Teknoloji Üniversitesi">Anka Teknoloji Üniversitesi</option>
+                            <option value="Ankara Sosyal Bilimler Üniversitesi">Ankara Sosyal Bilimler Üniversitesi</option>
+                            <option value="Ankara Üniversitesi">Ankara Üniversitesi</option>
+                            <option value="Ardahan Üniversitesi">Ardahan Üniversitesi</option>
+                            <option value="Artvin Çoruh Üniversitesi">Artvin Çoruh Üniversitesi</option>
+                            <option value="Atatürk Üniversitesi">Atatürk Üniversitesi</option>
+                            <option value="Atılım Üniversitesi">Atılım Üniversitesi</option>
+                            <option value="Avrasya Üniversitesi">Avrasya Üniversitesi</option>
+                            <option value="Ağrı İbrahim Çeçen Üniversitesi">Ağrı İbrahim Çeçen Üniversitesi</option>
+                            <option value="Bahçeşehir Üniversitesi">Bahçeşehir Üniversitesi</option>
+                            <option value="Balıkesir Üniversitesi">Balıkesir Üniversitesi</option>
+                            <option value="Bandırma Onyedi Eylül Üniversitesi">Bandırma Onyedi Eylül Üniversitesi</option>
+                            <option value="Bartın Üniversitesi">Bartın Üniversitesi</option>
+                            <option value="Batman Üniversitesi">Batman Üniversitesi</option>
+                            <option value="Bayburt Üniversitesi">Bayburt Üniversitesi</option>
+                            <option value="Başkent Üniversitesi">Başkent Üniversitesi</option>
+                            <option value="Beykent Üniversitesi">Beykent Üniversitesi</option>
+                            <option value="Bezmiâlem Vakıf Üniversitesi">Bezmiâlem Vakıf Üniversitesi</option>
+                            <option value="Bilecik Şeyh Edebali Üniversitesi">Bilecik Şeyh Edebali Üniversitesi</option>
+                            <option value="Bilkent Üniversitesi">Bilkent Üniversitesi</option>
+                            <option value="Bingöl Üniversitesi">Bingöl Üniversitesi</option>
+                            <option value="Biruni Üniversitesi">Biruni Üniversitesi</option>
+                            <option value="Bitlis Eren Üniversitesi">Bitlis Eren Üniversitesi</option>
+                            <option value="Bozok Üniversitesi">Bozok Üniversitesi</option>
+                            <option value="Boğaziçi Üniversitesi">Boğaziçi Üniversitesi</option>
+                            <option value="Bursa Orhangazi Üniversitesi">Bursa Orhangazi Üniversitesi</option>
+                            <option value="Bursa Teknik Üniversitesi">Bursa Teknik Üniversitesi</option>
+                            <option value="Bülent Ecevit Üniversitesi">Bülent Ecevit Üniversitesi</option>
+                            <option value="Canik Başarı Üniversitesi">Canik Başarı Üniversitesi</option>
+                            <option value="Celal Bayar Üniversitesi">Celal Bayar Üniversitesi</option>
+                            <option value="Cumhuriyet Üniversitesi">Cumhuriyet Üniversitesi</option>
+                            <option value="Çanakkale Onsekiz Mart Üniversitesi">Çanakkale Onsekiz Mart Üniversitesi</option>
+                            <option value="Çankaya Üniversitesi">Çankaya Üniversitesi</option>
+                            <option value="Çankırı Karatekin Üniversitesi">Çankırı Karatekin Üniversitesi</option>
+                            <option value="Çağ Üniversitesi">Çağ Üniversitesi</option>
+                            <option value="Çukurova Üniversitesi">Çukurova Üniversitesi</option>
+                            <option value="Deniz Harp Okulu">Deniz Harp Okulu</option>
+                            <option value="Dicle Üniversitesi">Dicle Üniversitesi</option>
+                            <option value="Dokuz Eylül Üniversitesi">Dokuz Eylül Üniversitesi</option>
+                            <option value="Doğuş Üniversitesi">Doğuş Üniversitesi</option>
+                            <option value="Dumlupınar Üniversitesi">Dumlupınar Üniversitesi</option>
+                            <option value="Düzce Üniversitesi">Düzce Üniversitesi</option>
+                            <option value="Ege Üniversitesi">Ege Üniversitesi</option>
+                            <option value="Erciyes Üniversitesi">Erciyes Üniversitesi</option>
+                            <option value="Erzincan Üniversitesi">Erzincan Üniversitesi</option>
+                            <option value="Erzurum Teknik Üniversitesi">Erzurum Teknik Üniversitesi</option>
+                            <option value="Eskişehir Osmangazi Üniversitesi">Eskişehir Osmangazi Üniversitesi</option>
+                            <option value="Fatih Sultan Mehmet Üniversitesi">Fatih Sultan Mehmet Üniversitesi</option>
+                            <option value="Fatih Üniversitesi">Fatih Üniversitesi</option>
+                            <option value="Fırat Üniversitesi">Fırat Üniversitesi</option>
+                            <option value="Galatasaray Üniversitesi">Galatasaray Üniversitesi</option>
+                            <option value="Gazi Üniversitesi">Gazi Üniversitesi</option>
+                            <option value="Gaziantep Üniversitesi">Gaziantep Üniversitesi</option>
+                            <option value="Gaziosmanpaşa Üniversitesi">Gaziosmanpaşa Üniversitesi</option>
+                            <option value="Gebze Teknik Üniversitesi">Gebze Teknik Üniversitesi</option>
+                            <option value="Gedik Üniversitesi">Gedik Üniversitesi</option>
+                            <option value="Gediz Üniversitesi">Gediz Üniversitesi</option>
+                            <option value="Giresun Üniversitesi">Giresun Üniversitesi</option>
+                            <option value="Gülhane Askeri Tıp Akademisi">Gülhane Askeri Tıp Akademisi</option>
+                            <option value="Gümüşhane Üniversitesi">Gümüşhane Üniversitesi</option>
+                            <option value="Hacettepe Üniversitesi">Hacettepe Üniversitesi</option>
+                            <option value="Hakkari Üniversitesi">Hakkari Üniversitesi</option>
+                            <option value="Haliç Üniversitesi">Haliç Üniversitesi</option>
+                            <option value="Harran Üniversitesi">Harran Üniversitesi</option>
+                            <option value="Hasan Kalyoncu Üniversitesi">Hasan Kalyoncu Üniversitesi</option>
+                            <option value="Hava Harp Okulu">Hava Harp Okulu</option>
+                            <option value="Hitit Üniversitesi">Hitit Üniversitesi</option>
+                            <option value="Iğdır Üniversitesi">Iğdır Üniversitesi</option>
+                            <option value="Işık Üniversitesi">Işık Üniversitesi</option>
+                            <option value="Kadir Has Üniversitesi">Kadir Has Üniversitesi</option>
+                            <option value="Kafkas Üniversitesi">Kafkas Üniversitesi</option>
+                            <option value="Kahramanmaraş Sütçü İmam Üniversitesi">Kahramanmaraş Sütçü İmam Üniversitesi</option>
+                            <option value="Kanuni Üniversitesi">Kanuni Üniversitesi</option>
+                            <option value="Kara Harp Okulu">Kara Harp Okulu</option>
+                            <option value="Karabük Üniversitesi">Karabük Üniversitesi</option>
+                            <option value="Karadeniz Teknik Üniversitesi">Karadeniz Teknik Üniversitesi</option>
+                            <option value="Karamanoğlu Mehmetbey Üniversitesi">Karamanoğlu Mehmetbey Üniversitesi</option>
+                            <option value="Karatay Üniversitesi">Karatay Üniversitesi</option>
+                            <option value="Kastamonu Üniversitesi">Kastamonu Üniversitesi</option>
+                            <option value="Kilis 7 Aralık Üniversitesi">Kilis 7 Aralık Üniversitesi</option>
+                            <option value="Kocaeli Üniversitesi">Kocaeli Üniversitesi</option>
+                            <option value="Konya Gıda Tarım Üniversitesi">Konya Gıda Tarım Üniversitesi</option>
+                            <option value="Koç Üniversitesi">Koç Üniversitesi</option>
+                            <option value="Kırklareli Üniversitesi">Kırklareli Üniversitesi</option>
+                            <option value="Kırıkkale Üniversitesi">Kırıkkale Üniversitesi</option>
+                            <option value="MEF Üniversitesi">MEF Üniversitesi</option>
+                            <option value="Maltepe Üniversitesi">Maltepe Üniversitesi</option>
+                            <option value="Mardin Artuklu Üniversitesi">Mardin Artuklu Üniversitesi</option>
+                            <option value="Marmara Üniversitesi">Marmara Üniversitesi</option>
+                            <option value="Mehmet Akif Ersoy Üniversitesi">Mehmet Akif Ersoy Üniversitesi</option>
+                            <option value="Melikşah Üniversitesi">Melikşah Üniversitesi</option>
+                            <option value="Mersin Üniversitesi">Mersin Üniversitesi</option>
+                            <option value="Mevlana Üniversitesi">Mevlana Üniversitesi</option>
+                            <option value="Mimar Sinan Güzel Sanatlar Üniversitesi">Mimar Sinan Güzel Sanatlar Üniversitesi</option>
+                            <option value="Murat Hüdavendigar Üniversitesi">Murat Hüdavendigar Üniversitesi</option>
+                            <option value="Mustafa Kemal Üniversitesi">Mustafa Kemal Üniversitesi</option>
+                            <option value="Muğla Sıtkı Koçman Üniversitesi">Muğla Sıtkı Koçman Üniversitesi</option>
+                            <option value="Muş Alparslan Üniversitesi">Muş Alparslan Üniversitesi</option>
+                            <option value="Namık Kemal Üniversitesi">Namık Kemal Üniversitesi</option>
+                            <option value="Necmettin Erbakan Üniversitesi**">Necmettin Erbakan Üniversitesi**</option>
+                            <option value="Nevşehir Hacı Bektaş Veli Üniversitesi">Nevşehir Hacı Bektaş Veli Üniversitesi</option>
+                            <option value="Niğde Üniversitesi">Niğde Üniversitesi</option>
+                            <option value="Nişantaşı Üniversitesi">Nişantaşı Üniversitesi</option>
+                            <option value="Nuh Naci Yazgan Üniversitesi">Nuh Naci Yazgan Üniversitesi</option>
+                            <option value="İbn-u Haldun Üniversitesi">İbn-u Haldun Üniversitesi</option>
+                            <option value="İnönü Üniversitesi">İnönü Üniversitesi</option>
+                            <option value="İpek Üniversitesi**">İpek Üniversitesi**</option>
+                            <option value="İskenderun Teknik Üniversitesi">İskenderun Teknik Üniversitesi</option>
+                            <option value="İstanbul 29 Mayıs Üniversitesi">İstanbul 29 Mayıs Üniversitesi</option>
+                            <option value="İstanbul Arel Üniversitesi">İstanbul Arel Üniversitesi</option>
+                            <option value="İstanbul Aydın Üniversitesi">İstanbul Aydın Üniversitesi</option>
+                            <option value="İstanbul Bilgi Üniversitesi">İstanbul Bilgi Üniversitesi</option>
+                            <option value="İstanbul Bilim Üniversitesi">İstanbul Bilim Üniversitesi</option>
+                            <option value="İstanbul Esenyurt Üniversitesi">İstanbul Esenyurt Üniversitesi</option>
+                            <option value="İstanbul Gelişim Üniversitesi">İstanbul Gelişim Üniversitesi</option>
+                            <option value="İstanbul Kemerburgaz Üniversitesi">İstanbul Kemerburgaz Üniversitesi</option>
+                            <option value="İstanbul Kültür Üniversitesi">İstanbul Kültür Üniversitesi</option>
+                            <option value="İstanbul Medeniyet Üniversitesi">İstanbul Medeniyet Üniversitesi</option>
+                            <option value="İstanbul Medipol Üniversitesi">İstanbul Medipol Üniversitesi</option>
+                            <option value="İstanbul Rumeli Üniversitesi">İstanbul Rumeli Üniversitesi</option>
+                            <option value="İstanbul Sabahattin Zaim Üniversitesi">İstanbul Sabahattin Zaim Üniversitesi</option>
+                            <option value="İstanbul Teknik Üniversitesi">İstanbul Teknik Üniversitesi</option>
+                            <option value="İstanbul Ticaret Üniversitesi">İstanbul Ticaret Üniversitesi</option>
+                            <option value="İstanbul Üniversitesi">İstanbul Üniversitesi</option>
+                            <option value="İstanbul Şehir Üniversitesi">İstanbul Şehir Üniversitesi</option>
+                            <option value="İstinye Üniversitesi">İstinye Üniversitesi</option>
+                            <option value="İzmir Ekonomi Üniversitesi">İzmir Ekonomi Üniversitesi</option>
+                            <option value="İzmir Kâtip Çelebi Üniversitesi">İzmir Kâtip Çelebi Üniversitesi</option>
+                            <option value="İzmir Yüksek Teknoloji Enstitüsü">İzmir Yüksek Teknoloji Enstitüsü</option>
+                            <option value="İzmir Üniversitesi">İzmir Üniversitesi</option>
+                            <option value="Okan Üniversitesi">Okan Üniversitesi</option>
+                            <option value="Ondokuz Mayıs Üniversitesi">Ondokuz Mayıs Üniversitesi</option>
+                            <option value="Ordu Üniversitesi">Ordu Üniversitesi</option>
+                            <option value="Orta Doğu Teknik Üniversitesi">Orta Doğu Teknik Üniversitesi</option>
+                            <option value="Osmaniye Korkut Ata Üniversitesi">Osmaniye Korkut Ata Üniversitesi</option>
+                            <option value="Özyeğin Üniversitesi">Özyeğin Üniversitesi</option>
+                            <option value="Pamukkale Üniversitesi">Pamukkale Üniversitesi</option>
+                            <option value="Piri Reis Üniversitesi">Piri Reis Üniversitesi</option>
+                            <option value="Polis Akademisi">Polis Akademisi</option>
+                            <option value="Recep Tayyip Erdoğan Üniversitesi">Recep Tayyip Erdoğan Üniversitesi</option>
+                            <option value="Sabancı Üniversitesi">Sabancı Üniversitesi</option>
+                            <option value="Sakarya Üniversitesi">Sakarya Üniversitesi</option>
+                            <option value="Sanko Üniversitesi">Sanko Üniversitesi</option>
+                            <option value="Sağlık Bilimleri Üniversitesi">Sağlık Bilimleri Üniversitesi</option>
+                            <option value="Selahattin Eyyubi Üniversitesi">Selahattin Eyyubi Üniversitesi</option>
+                            <option value="Selçuk Üniversitesi">Selçuk Üniversitesi</option>
+                            <option value="Siirt Üniversitesi">Siirt Üniversitesi</option>
+                            <option value="Sinop Üniversitesi">Sinop Üniversitesi</option>
+                            <option value="Süleyman Demirel Üniversitesi">Süleyman Demirel Üniversitesi</option>
+                            <option value="Süleyman Şah Üniversitesi">Süleyman Şah Üniversitesi</option>
+                            <option value="Şifa Üniversitesi">Şifa Üniversitesi</option>
+                            <option value="Şırnak Üniversitesi">Şırnak Üniversitesi</option>
+                            <option value="TED Üniversitesi">TED Üniversitesi</option>
+                            <option value="TOBB Ekonomi ve Teknoloji Üniversitesi">TOBB Ekonomi ve Teknoloji Üniversitesi</option>
+                            <option value="Toros Üniversitesi">Toros Üniversitesi</option>
+                            <option value="Trakya Üniversitesi">Trakya Üniversitesi</option>
+                            <option value="Tunceli Üniversitesi">Tunceli Üniversitesi</option>
+                            <option value="Turgut Özal Üniversitesi">Turgut Özal Üniversitesi</option>
+                            <option value="Türk Alman Üniversitesi">Türk Alman Üniversitesi</option>
+                            <option value="Türk Hava Kurumu Üniversitesi">Türk Hava Kurumu Üniversitesi</option>
+                            <option value="Türkiye Uluslararası İslam, Bilim ve Teknoloji Üniversitesi">Türkiye Uluslararası İslam, Bilim ve Teknoloji Üniversitesi</option>
+                            <option value="Ufuk Üniversitesi">Ufuk Üniversitesi</option>
+                            <option value="Uludağ Üniversitesi">Uludağ Üniversitesi</option>
+                            <option value="Uluslararası Antalya Üniversitesi">Uluslararası Antalya Üniversitesi</option>
+                            <option value="Uşak Üniversitesi">Uşak Üniversitesi</option>
+                            <option value="Üsküdar Üniversitesi">Üsküdar Üniversitesi</option>
+                            <option value="Yalova Üniversitesi">Yalova Üniversitesi</option>
+                            <option value="Yaşar Üniversitesi">Yaşar Üniversitesi</option>
+                            <option value="Yeditepe Üniversitesi">Yeditepe Üniversitesi</option>
+                            <option value="Yeni Yüzyıl Üniversitesi">Yeni Yüzyıl Üniversitesi</option>
+                            <option value="Yüksek İhtisas Üniversitesi**">Yüksek İhtisas Üniversitesi**</option>
+                            <option value="Yüzüncü Yıl Üniversitesi">Yüzüncü Yıl Üniversitesi</option>
+                            <option value="Yıldırım Beyazıt Üniversitesi">Yıldırım Beyazıt Üniversitesi</option>
+                            <option value="Yıldız Teknik Üniversitesi">Yıldız Teknik Üniversitesi</option>
+                            <option value="Zirve Üniversitesi">Zirve Üniversitesi</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 row">
+                    <div class="col-12 mt-2">
+                        <h5 class="card-title">
+                            Bölüm:
+                        </h5>
+                    </div>
+
+                    <div class="col-12 mt-3">
+                        <select single name="bolum" id="bolumler" class="form-select" aria-label="tercih robotu tercih tipi seçimi">
+                            <option selected value="hepsi">Hepsi</option>
+                            <option value="1">TYT</option>
+                            <option value="2">Eşit Ağırlık</option>
+                            <option value="3">Sayısal</option>
+                            <option value="4">Sözel</option>
+                            <option value="5">Dil</option>
+                        </select>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <hr>
+
+            <div class="row  mt-4">
+                <div class="col-lg-3">
+                    <button 
+                    id="search_btn"
+                    class="btn btn-primary w-100 d-flex align-items-center justify-content-center">
+                        Ara&nbsp;<ion-icon name="search-outline"></ion-icon>
+                    </button>
+                </div>
+
+                <div class="col-lg-3 mt-sm-2 mt-md-0">
+                    <button id="sifirla" class="btn btn-outline-secondary w-100 d-flex align-items-center justify-content-center">
+                        Sıfırla&nbsp;<ion-icon name="trash-outline"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="mt-4 mb-4 shadow-lg p-3 bg-body rounded">
+            <div class="d-flex align-items-center">
+                <h4>
+                    2022 YKS (TYT - AYT - YDT) Tercih Listesi
+                </h4>
+
+                <div class="row" style="margin-left: auto; margin-right: 8px;">
+                    <button type="button" class="btn btn-primary"
+                    
+                    id="tercihListesiButton"
+                    data-bs-toggle="modal" data-bs-target="#tercihListesiModal" title="Success Button">Tercih Listesi ( 0 )</button>
+
+                </div>
+            </div>
+
+            <hr class="hr" />
+
+            <div class="table-responsive">
+                <table class="table table-striped" id="main_table">
+                    <thead>
+                        <tr >                        
+                            <th scope="col">
+                                YOP
+                            </th>
+    
+                            <th scope="col">
+                                Üniversite Adı
+                            </th>
+    
+                            <th scope="col">
+                                Şehir
+                            </th>
+                            
+                            <th scope="col">
+                                Bölüm Adı
+                            </th>
+                            
+                            <th scope="col">
+                                Taban Puan
+                            </th>
+                            
+                            <th scope="col">
+                                Başarı Sırası
+                            </th>
+                            
+                            <th scope="col">
+                                Öğretim Türü
+                            </th>
+                            
+                            <th scope="col">
+                                Üniversite Türü
+                            </th>
+                            
+                            <th scope="col">
+                                Kontenjan
+                            </th>
+    
+                            <th scope="col">
+                                Tercih Listesi
+                            </th>
+                        </tr>
+    
+                        
+                    </thead>
+                    <tbody id="table_tbody">
+                        <tr>
+                            <td>
+    
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <nav aria-label="universite listesi pagination" class="mt-2 d-flex justify-content-center">
+                <ul class="pagination flex-wrap" id="uni_pages">
+                  
+                    
+                </ul>
+              </nav>
+        </section>
+    </main>
+
+    <div class="modal fade" id="tercihListesiModal" tabindex="-1" aria-labelledby="tercihListesiModal" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="tercihListesiModalLabel">Tercih Listesi</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="table-responsive">
+                    <table id="tercih_listes_table" class="table table-striped">
+                        <thead>
+                            <tr >                        
+                                <th scope="col">
+                                    YOP
+                                </th>
+        
+                                <th scope="col">
+                                    Üniversite Adı
+                                </th>
+        
+                                <th scope="col">
+                                    Şehir
+                                </th>
+                                
+                                <th scope="col">
+                                    Bölüm Adı
+                                </th>
+                                
+                                <th scope="col">
+                                    Taban Puan
+                                </th>
+                                
+                                <th scope="col">
+                                    Başarı Sırası
+                                </th>
+        
+                                <th scope="col">
+                                    Tercih Listesi
+                                </th>
+                            </tr>
+                      
+                        </thead>
+                        <tbody id="table_tercih_list_body">
+                            <tr>
+                                <td class="hide_long_text">
+        
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                
+                <div class="form-row" style="margin-right: auto; margin-left: 0;">
+                    <div class="col-auto">
+                        Mail adresini gir, listeni mail olarak gönderelim!
+                    </div>
+
+                    <div class="col-auto mt-2">
+                        <div class="input-group mb-2 mr-sm-2">
+                            <div class="input-group-prepend">
+                            <div class="input-group-text">@</div>
+                            </div>
+                            <input type="email" class="form-control" id="listToMailInput" placeholder="Mail Adresin">
+                            
+                        </div>
+                        <p id="result"></p>
+                        
+                    </div>
+
+                    <div class="col-auto mt-2 ">
+                        <button type="button" class="w-100 justify-content-center btn btn-outline-secondary align-items-center d-flex" 
+                        data-output-excel="tercih_listes_table"
+                        data-output-type="mail"
+                        >Mail Gönder <ion-icon class="mx-2" name="mail"></ion-icon></button>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <button type="button" class="w-100 btn btn-outline-secondary" data-output-excel="tercih_listes_table">Excel Çıktısı <ion-icon name="download"></ion-icon></button>
+                    </div>
+                    <div class="col-12">
+                        <button type="button" class="w-100 mt-2 btn btn-primary" data-bs-dismiss="modal">Kapat</button>
+
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+    <script src="./js/BsMultiSelect.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        $(document).ready(function(){
+            
+            var query = {
+                "pturu": "tyt",
+                "ust_puan": "",
+                "alt_puan": 150,
+                "ust_bs": 0,
+                "alt_bs": 3000000,
+                "sehir": [],
+                "uni_turu": "hepsi",
+                "ogretim_turu": "hepsi",
+                "egitim_dili":  [],
+                "universite":  [],
+                "bolum": "hepsi"
+            };
+
+            
+            $.getJSON("bolumler.json", function (jd) {
+                const element = document.getElementById("bolumler");
+                var mainHtml = `
+                <option selected value="hepsi">Hepsi</option>
+                `;
+                for (let index = 0; index < jd.length; index++) {
+                    const item = jd[index];
+                    mainHtml += `<option value=${item}>${item}</option>`;
+                }
+
+                element.innerHTML = mainHtml;
+            });
+
+            $("select[multiple='multiple']").bsMultiSelect({
+                cssPatch: {
+                    choices: {
+                        maxHeight: 300,
+                        overflow: "auto"
+                    }
+                },
+                placeholder: "Hepsi",
+                setSelected: function (el, b) {
+                    if(b == false){
+                        query[el.parentElement.getAttribute("name")] = query[el.parentElement.getAttribute("name")].filter(x => x != el.value);
+                    
+                    }else{
+                        ChangeState(el.parentElement.getAttribute("name"), el.value, true)
+                    }
+                }
+            });
+
+            $("select[single]").change(function () {
+                ChangeState(this.getAttribute("name"), this.value, false)
+            });
+
+            $('input[data-bw]').keypress(function(event) {
+                if ((event.which != 46 || $(this).val().indexOf('.') != -1  || $(this).val().indexOf(',') != -1) && (event.which < 48 || event.which > 57)) {
+                    if(event.which !== 44){
+                        
+                        event.preventDefault();
+                    }
+                }
+            });
+
+            $('input').change(function() {
+                ChangeState(this.getAttribute("name"), this.value, false);
+            });
+            
+            
+
+
+            var pages = [];
+            var current_page = 1;
+
+            var tercih_listesi = [];
+
+            function ChangeState(key, value, isArray) {
+                console.log(key);
+                console.log(value);
+                if(isArray){
+                    query[key].push(value); 
+                } else{
+                    query[key] = value; 
+                }
+            }
+
+            function GetData() {
+                $.ajax({
+                    method: "GET",
+                    url: `yokatlas.php?pturu=${query['pturu']}&ust_puan=${query['ust_puan']}&alt_puan=${query['alt_puan']}&ust_bs=${query['ust_bs']}&alt_bs=${query['alt_bs']}&sehir=${query['sehir']}&uni_turu=${query['uni_turu']}&ogretim_turu=${query['ogretim_turu']}&egitim_dili=${query['egitim_dili']}&universite=${query['universite']}&bolum=${query['bolum']}`,
+                    success: (res) => {
+                        CreatePagination(JSON.parse(res));
+                        ChangePage(1);
+                    }
+                });
+            }
+
+            function CreatePagination(array) {
+                const chunkSize = 10;
+                pages = [];
+                for (let i = 0; i < array.length; i += chunkSize) {
+                    const chunk = array.slice(i, i + chunkSize);
+                    pages.push(chunk);
+                }
+
+                RenderPagination(pages);
+            }
+
+            function RenderPagination(pages) {
+                const ul_uni_pages = document.getElementById("uni_pages");
+           
+                var pages_html = ``;
+
+                
+
+                for (let index = 0; index < pages.length; index++) {
+                    const page = pages[index];
+                    var c_page = index + 1;
+                    var el_id = "pagination-" + c_page;
+                    if(current_page === c_page){
+                        pages_html += `
+                        <li class="page-item active">
+                            <a class="page-link" >${index + 1}</a>
+                        </li>
+                        `;
+                        continue;
+                    }
+                    pages_html += `
+                    <li class="page-item" id="${el_id}">
+                        <a class="page-link" >${index + 1}</a>
+                    </li>
+                    `;
+
+                                   
+                }
+
+                var next_state = pages.length === current_page ? "disabled" : "";
+                var previous_state = current_page === 1 ? "disabled" : "";
+
+                var pages_main_html = `
+                <li class="page-item  ${previous_state}">
+                    <a class="page-link"  tabindex="-1">Geri</a>
+                  </li>
+                    ${pages_html}
+                  <li class="page-item  ${next_state}" tabindex="-2">
+                    <a class="page-link" >İleri</a>
+                </li>
+                `
+
+                ul_uni_pages.innerHTML = pages_main_html;
+                RenderTable(pages.length > 0 ? pages[current_page - 1] : [], "table_tbody")
+                $(ul_uni_pages).ready(function() {
+                    $(".page-item").click(function () {
+                        if(this.id !== undefined && this.id !== null && this.id !== ""){
+                            ChangePage(this.id.replace("pagination-", ""));
+                        }else if(this.getAttribute("tabindex") !== undefined && this.getAttribute("tabindex") !== null){
+                            ChangePage(this.getAttribute("tabindex"))
+                        }
+                    });
+                });
+            }
+
+            function ChangePage(pageIndex) {
+                pageIndex = Number(pageIndex);
+                if(pageIndex === -1) {
+                    current_page -= 1;
+                    if(current_page < 1) current_page = 1;
+                }
+                else if(pageIndex === -2) {
+                    current_page += 1;
+                    if(current_page > pages.length) current_page = pages.length;
+                }else{
+                    current_page = pageIndex;
+                }
+                RenderPagination(pages);
+            }
+
+            function RenderTable(data, target) {
+
+                const tbody = document.getElementById(target);
+                
+                var innerData = ``;
+                for (let index = 0; index < data.length; index++) {
+                    const item = data[index];
+
+                    var regex_1 = `<a[^>]*href=["']([^"']*)["']`;
+                    var yop_kodu = item['yop_kodu'].match(regex_1)[1];
+                    
+                    var add_btn = ``;
+
+                    
+
+                    if(tercih_listesi.find(x => x['yop_kodu'] === item['yop_kodu']) !== undefined){
+                        add_btn = `
+                        <button 
+                            
+                            data-remove
+                            data-item="${yop_kodu.match(/\d+/)[0]}"
+                            style="font-size: x-large;" class="btn btn-danger">
+                                <ion-icon name="remove-outline"></ion-icon>
+                        </button>
+                        `
+                    }else{
+                        add_btn = `
+                        <button 
+                        data-add
+                        data-item="${yop_kodu.match(/\d+/)[0]}"
+                        style="font-size: x-large;" class="btn btn-primary">
+                            <ion-icon name="add-circle-outline"></ion-icon>
+                        </button>
+                        `
+                    }
+
+                    innerData += `
+                    <tr >
+                        <td>
+                            ${yop_kodu.match(/\d+/)[0]}
+                        </td>
+
+                        <td >
+                            <div class="col-12">${item['universite']}
+                            </div>
+                            <span style="font-size: small;">
+                                ( ${item['ogretim_dili']} )
+                            </span>
+                        </td>
+
+                        <td>
+                            ${item['sehir_adi']}
+                        </td>
+
+                        <td>
+                            ${item['program_adi']}
+                        </td>
+
+                        <td>
+                            ${item['taban'][0]}
+                        </td>
+
+                        <td>
+                            ${item['tbs'][0]}
+                        </td>
+
+                        ${target !== "table_tercih_list_body" ? 
+                        `
+                        <td>
+                            ${item['ogretim_turu']}
+                        </td>
+                        `: ''}
+
+                        ${target !== "table_tercih_list_body" ? 
+                        `
+                        <td>
+                            ${item['universite_turu']}
+                        </td>
+                        `: ''}
+
+                        ${target !== "table_tercih_list_body" ? 
+                        `
+                        <td>
+                            ${item['kontenjan'][0]}
+                        </td>
+                        `: ''}
+
+                        <td>
+                            ${add_btn}
+                        </td>
+                    </tr>
+
+                 
+                    `
+                }
+
+                tbody.innerHTML = innerData;
+
+           
+                $('button[data-item]').click(function () {
+                    
+                    var t_item = FoundItem($(this).data("item"));
+                    
+                    if(tercih_listesi.find(x => x['yop_kodu'] === t_item['yop_kodu']) !== undefined && this.hasAttribute("data-remove")){
+                        
+                        tercih_listesi = tercih_listesi.filter(x => x['yop_kodu'] !== t_item['yop_kodu']);
+                        this.classList.replace("btn-danger", "btn-primary");
+                        this.removeAttribute("data-remove");
+                        this.setAttribute("data-add", "");
+                        this.innerHTML = '<ion-icon name="add-circle-outline"></ion-icon>';
+                        if(($("#tercihListesiModal").data('bs.modal') || {})._isShown !== undefined){
+                            RenderTable(tercih_listesi, "table_tercih_list_body");
+                            
+                        }
+
+                    }else if(this.hasAttribute("data-add")){
+                        tercih_listesi.push(t_item);
+                        this.classList.replace("btn-primary", "btn-danger");
+                        this.removeAttribute("data-add");
+                        this.setAttribute("data-remove", "");
+                        this.innerHTML = '<ion-icon name="remove-outline"></ion-icon>';
+                    }
+                    
+                    document.getElementById("tercihListesiButton").innerText =  `Tercih Listesi ( ${tercih_listesi.length} )`;
+
+                });
+            }
+
+            function FoundItem(desiredYop) {
+                for (let index = 0; index < pages.length; index++) {
+                    const page = pages[index];
+                    for (let index = 0; index < page.length; index++) {
+                        const item = page[index];
+                        desiredYop = String(desiredYop);
+                        if(item['yop_kodu'].match(/\d+/)[0] === desiredYop){
+                            return item;
+                        }
+                    }
+                }
+            }
+
+            const b64toBlob = (b64Data, contentType='', sliceSize=512) => {
+                const byteCharacters = atob(b64Data);
+                const byteArrays = [];
+
+                for (let offset = 0; offset < byteCharacters.length; offset += sliceSize) {
+                    const slice = byteCharacters.slice(offset, offset + sliceSize);
+
+                    const byteNumbers = new Array(slice.length);
+                    for (let i = 0; i < slice.length; i++) {
+                    byteNumbers[i] = slice.charCodeAt(i);
+                    }
+
+                    const byteArray = new Uint8Array(byteNumbers);
+                    byteArrays.push(byteArray);
+                }
+
+                const blob = new Blob(byteArrays, {type: contentType});
+                return blob;
+            }
+            
+            function uuidv4() {
+                return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
+                    (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+                );
+            }
+
+            function ExportToExcel(type, fn, dl, tableId, type) {
+                var elt = document.getElementById(tableId);
+                var wb = XLSX.utils.table_to_book(elt, { sheet: "sheet1" });
+                
+
+                if(type==="mail"){
+                    const email = $('#listToMailInput').val();
+                    if(validateEmail(email)) {
+                        var file = b64toBlob(XLSX.write(wb, { bookType: "xlsx", bookSST: true, type: 'base64' }), "xlsx");
+
+
+                        var formData = new FormData();
+                        formData.append("file", file, uuidv4() + ".xlsx");
+
+                        $.ajax({
+                            type: "POST",
+                            url: "exportExcel.php?mail=" + email,
+                        
+                            success: function (data) {
+                                var ds = JSON.parse(data);
+                                $.notify(ds['message'], ds['status'] === 200 ? "success": "error");
+                            },
+                            error: function (error) {
+
+                            },
+                            async: true,
+                            data: formData,
+                            cache: false,
+                            contentType: false,
+                            processData: false,
+                            timeout: 60000
+                        });
+                    }
+                    
+                    
+                }else{
+                    return XLSX.writeFile(wb, fn || ('MySheetName.' + (type || 'xlsx')));
+                }                
+            }
+
+            GetData();
+
+            const validateEmail = (email) => {
+                return email.match(
+                    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                );
+            };
+
+            const validate = () => {
+                const $result = $('#result');
+                const email = $('#listToMailInput').val();
+                $result.text('');
+
+                if(validateEmail(email)){
+                    $result.text("Mail adresi geçerli.");
+                    $result.css('color', 'green');
+                } else{
+                    $result.text("Lütfen geçerli bir mail adresi girin.");
+                    $result.css('color', 'red');
+                }
+                return false;
+            }
+
+            $('#listToMailInput').on('input', validate);
+            
+            $("#search_btn").click(function () {
+                GetData();
+            });
+
+            $('#tercihListesiButton').click(function () {
+                RenderTable(tercih_listesi, "table_tercih_list_body");
+            })
+
+            $('#tercihListesiModal').on('hidden.bs.modal', function () {
+                RenderTable([], "table_tercih_list_body");
+                RenderTable([], "table_tbody");
+                RenderTable(pages.length > 0 ? pages[current_page - 1] : [], "table_tbody");
+            })
+
+            $('button[data-output-excel]').click(function () {
+                var target = this.getAttribute("data-output-excel");
+                var outputType = this.getAttribute("data-output-type");
+                ExportToExcel("xlsx", "tercih_listesi.xlsx", false, target, outputType);
+                
+            });
+
+            $('#sifirla').click(function () {
+                query = {
+                    "pturu": "tyt",
+                    "ust_puan": "",
+                    "alt_puan": 150,
+                    "ust_bs": 0,
+                    "alt_bs": 3000000,
+                    "sehir": [],
+                    "uni_turu": "hepsi",
+                    "ogretim_turu": "hepsi",
+                    "egitim_dili":  [],
+                    "universite":  [],
+                    "bolum": "hepsi"
+                };
+                $('select[name="pturu"]').val("tyt");
+                $('input[name="alt_bs"]').val("");
+                $('input[name="ust_bs"]').val("");
+                $('input[name="alt_puan"]').val("");
+                $('input[name="ust_puan"]').val("");
+                $('select[name="uni_turu"]').val("hepsi");
+                $('select[name="ogretim_turu"]').val("hepsi");
+                $("select[multiple='multiple']").bsMultiSelect("UpdateData");
+                $('select[name="bolum"]').val("hepsi");
+                
+                GetData();
+            })
+        });
+    </script>
+
+    <script src="js/notify.min.js"></script>
+
+    
+</body>
+
+</html>

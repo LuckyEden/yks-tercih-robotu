@@ -1,0 +1,9 @@
+
+
+.hide_long_text{
+    display: inline-block;
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
